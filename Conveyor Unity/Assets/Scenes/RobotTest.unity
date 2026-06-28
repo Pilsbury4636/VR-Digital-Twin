@@ -4545,6 +4545,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a05c2aab29e3b6e4f939f97adfe1da47, type: 3}
+--- !u!1 &298407270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298407272}
+  - component: {fileID: 298407271}
+  m_Layer: 0
+  m_Name: Button Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &298407271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298407270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fcf7bf39fa693144b9dc1a12b215fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlButtons: {fileID: 68454735}
+  connectButtons: {fileID: 540103469}
+  controlButtonsVisibleOnStart: 1
+  connectButtonsVisibleOnStart: 1
+--- !u!4 &298407272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298407270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 35.41113, y: -69.405556, z: 109.101}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &299051813
 GameObject:
   m_ObjectHideFlags: 8
@@ -4616,17 +4664,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302665352}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.14437065, y: -0, z: -0, w: 0.9895237}
+  m_LocalPosition: {x: 0, y: 0, z: -16.037037}
+  m_LocalScale: {x: 0.18594211, y: 0.18594217, z: 0.18594217}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1795421002}
-  m_Father: {fileID: 1342435778}
+  m_Father: {fileID: 540103470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -418, y: 26.4}
+  m_AnchoredPosition: {x: -115.53491, y: 48.66816}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302665354
@@ -5154,7 +5202,7 @@ GameObject:
   - component: {fileID: 368634907}
   - component: {fileID: 368634906}
   m_Layer: 3
-  m_Name: Button (Legacy)
+  m_Name: Connection Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5223,7 +5271,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 368634907}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 298407271}
+        m_TargetAssemblyTypeName: PanelActive, Assembly-CSharp
+        m_MethodName: ToggleConnectButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &368634907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5354,17 +5414,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379047396}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.14437065, y: -0, z: -0, w: 0.9895237}
+  m_LocalPosition: {x: 0, y: 0, z: -12.180035}
+  m_LocalScale: {x: 0.18594211, y: 0.18594217, z: 0.18594217}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1453959096}
-  m_Father: {fileID: 1342435778}
+  m_Father: {fileID: 540103470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -417.99994, y: 99}
+  m_AnchoredPosition: {x: -115.53485, y: 61.60481}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &379047398
@@ -6002,6 +6062,7 @@ Transform:
   - {fileID: 1781732241}
   - {fileID: 275475998}
   - {fileID: 1146003905}
+  - {fileID: 1326778501}
   m_Father: {fileID: 1536076438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &439929282
@@ -7203,6 +7264,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9090ae501ff9cd459bec5271d40249c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &540103469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 540103470}
+  m_Layer: 0
+  m_Name: Connection Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &540103470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540103469}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.14437065, y: -0, z: -0, w: 0.9895237}
+  m_LocalPosition: {x: 203.34892, y: -199.78506, z: 157.43501}
+  m_LocalScale: {x: 5.378018, y: 5.378017, z: 5.378017}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 379047397}
+  - {fileID: 302665353}
+  - {fileID: 574918926}
+  m_Father: {fileID: 1342435778}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544301637
 GameObject:
   m_ObjectHideFlags: 8
@@ -7718,17 +7813,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574918925}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.14437065, y: -0, z: -0, w: 0.9895237}
+  m_LocalPosition: {x: 0, y: 0, z: -14.161664}
+  m_LocalScale: {x: 0.18594211, y: 0.18594217, z: 0.18594217}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1093886281}
-  m_Father: {fileID: 1342435778}
+  m_Father: {fileID: 540103470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -417.99994, y: 61.7}
+  m_AnchoredPosition: {x: -115.53485, y: 54.9583}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574918927
@@ -16409,12 +16504,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326778496}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.369, y: 1.419, z: -1.473}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -395.9603, y: -326.73456, z: -117.39829}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 433148538}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1330150122 stripped
 GameObject:
@@ -16998,9 +17093,7 @@ RectTransform:
   - {fileID: 68454736}
   - {fileID: 368634905}
   - {fileID: 1648640118}
-  - {fileID: 379047397}
-  - {fileID: 574918926}
-  - {fileID: 302665353}
+  - {fileID: 540103470}
   m_Father: {fileID: 1536076438}
   m_LocalEulerAnglesHint: {x: 11.323, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -20637,7 +20730,7 @@ GameObject:
   - component: {fileID: 1648640120}
   - component: {fileID: 1648640119}
   m_Layer: 3
-  m_Name: Connect Panel
+  m_Name: Robot Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20706,7 +20799,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1648640120}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 298407271}
+        m_TargetAssemblyTypeName: PanelActive, Assembly-CSharp
+        m_MethodName: ToggleControlButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1648640120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27334,4 +27439,4 @@ SceneRoots:
   - {fileID: 1799607122}
   - {fileID: 1536076438}
   - {fileID: 375576706}
-  - {fileID: 1326778501}
+  - {fileID: 298407272}

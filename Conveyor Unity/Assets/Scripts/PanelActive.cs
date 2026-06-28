@@ -4,23 +4,36 @@ using UnityEngine;
 
 public class PanelActive : MonoBehaviour
 {
+    [Tooltip("Group of buttons toggled by the Robot Panel button (Go Ready, Start Conveyor, etc.)")]
     public GameObject controlButtons;
+
+    [Tooltip("Group of buttons toggled by the Connection Panel button (PC Connect, Lab Connect, etc.)")]
     public GameObject connectButtons;
 
-    // Start is called before the first frame update
+    [Tooltip("Whether each group starts visible.")]
+    public bool controlButtonsVisibleOnStart = true;
+    public bool connectButtonsVisibleOnStart = true;
+
     void Start()
     {
-        
+        if (controlButtons != null)
+            controlButtons.SetActive(controlButtonsVisibleOnStart);
+
+        if (connectButtons != null)
+            connectButtons.SetActive(connectButtonsVisibleOnStart);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
     
+    public void ToggleControlButtons()
+    {
+        if (controlButtons != null)
+            controlButtons.SetActive(!controlButtons.activeSelf);
     }
 
-    public void setVisibile()
+   
+    public void ToggleConnectButtons()
     {
-
+        if (connectButtons != null)
+            connectButtons.SetActive(!connectButtons.activeSelf);
     }
 }
